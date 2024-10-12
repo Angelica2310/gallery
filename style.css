@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#thumbnail-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  cursor: pointer;
+  outline: 0;
+}
+
+#thumbnail-container img {
+  flex-direction: row;
+  height: 100px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+}
+
+#display-image {
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+}
+
+@media (max-width: 900px) {
+  #thumbnail-container {
+    flex-wrap: wrap;
+  }
+}
